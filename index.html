@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1>My finances</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="total-category">
+        <label>Total:</label>
+        <input type="number" id="amountInput">
+    </div>
+      <div class="category-category">
+        <label>Category:</label>
+        <select id="categoryInput">
+            
+            <option value="select" disabled>Select an option</option>
+            <option value="income" selected>Income</option>
+            <option value="food" selected>Food and drinks</option>
+            <option value="purchases">Purchases</option>
+            <option value="transport">Transport</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="Housing">Housing</option>
+            <option value="communication">Internet, cellphone</option>
+            <option value="sport">Sport</option>
+            <option value="other">Other</option>
+
+        </select>
+        </div>
+        <div class="date-category">
+        <label>Date:</label>
+        <input type="date" id="dateInput">
+        </div>
+        <div class="type-category">
+        <label>Type:</label>
+        <select id="typeInput">
+            <option value="income">Income</option>
+            <option value="expense">Expenses</option>
+        </select>
+          </div>
+          <div class="btn">
+        <button onclick="addNewEntry()">Add a post</button>
+        </div>
+</div>
+</div>
+        <div class="balance">
+        <h2>Balance: <span id="balance">0</span> USD</h2>
+</div>
+<div class="report">
+    <h2>Report</h2>
+    <div id="reportContainer"></div>
+</div>
+<ul id="entriesList"></ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
