@@ -53,6 +53,11 @@ input {
     border-radius: 10px;
     color: white;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+
+}
+
+.report-body {
+    display: flex;
 }
 
 button {
@@ -104,5 +109,9 @@ button:hover {
     text-align: center;
     border-radius: 5px;
     font-size: 14px;
+    
+}
+
+.report-list {
     
 }
