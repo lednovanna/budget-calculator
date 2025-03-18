@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
-    background-color: bisque;
+    background-color: #1E1E2F;
+    color: #F5F5F5
 }
 
 .container {
@@ -14,28 +15,71 @@ body {
     
 }
 
+h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+
 .card {
     display: flex;
     height: 100%;
-    width: 100%;
-    margin-top: 100px;
+    
+    margin-top: 30px;
     justify-content: center;
-    background-color: aquamarine;
-    max-width: 700px;
+    background-color: #2D2D44;
+    
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
+
+input {
+    border-radius: 4px;
+}
+
+.total-category, .date-category, .category-category, .type-category{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+
 
 .report {
     margin-top: 20px;
     padding: 15px;
-    background: #2c2c2c;
+    background: #444475;
     border-radius: 10px;
     color: white;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+button {
+    background-color: #FF6B6B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #FF5252;
 }
 
 .report h2 {
     text-align: center;
+    
 }
 
 .report-bar-container {
@@ -43,6 +87,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 10px;
+    
 }
 
 .report-label {
@@ -59,4 +104,5 @@ body {
     text-align: center;
     border-radius: 5px;
     font-size: 14px;
+    
 }

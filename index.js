@@ -3,7 +3,7 @@ class Entry {
         this.amount = amount;
         this.category = category;
         this.date = date;
-        this.type = type; // "income" або "expense"
+        this.type = type; 
     }
 
     updateAmount(newAmount) {
@@ -17,7 +17,7 @@ class Entry {
 
 class FinanceManager {
     constructor() {
-        this.entries = JSON.parse(localStorage.getItem("financeEntries")) || [];; // Масив для збереження записів
+        this.entries = JSON.parse(localStorage.getItem("financeEntries")) || [];; 
     }
 
     addEntry(entry) {
@@ -58,7 +58,7 @@ function addNewEntry() {
     let date = document.getElementById("dateInput").value;
     let type = document.getElementById("typeInput").value;
 
-    // Проверка на корректность введенных данных
+    // Проверка
     if (isNaN(amount) || amount <= 0) {
         alert("Please, enter the correct amount!");
         return;
